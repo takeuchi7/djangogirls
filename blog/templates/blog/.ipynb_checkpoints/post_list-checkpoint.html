@@ -6,12 +6,11 @@
     
   <div class="date">
     <!--<p>問題: {{ post.pk}}</p>-->
-    <p>問題をクリック！</p>
+    <!--<p>問題をクリック！</p>-->
   </div>
 
 <!--これがリンクタブの仕組-->
   <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.number }}</a></h1>
-  <p>あ行の問題です</p>
     
 </div>
 {% endfor %}
