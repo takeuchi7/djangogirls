@@ -27,6 +27,11 @@
     <p><font size="5"><a href="{% url 'post_miss1' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
     <p><font size="5"><a href="{% url 'post_right1'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
   {% endifequal %}
+
+　{% ifequal post.pk 5 %}
+    <p><font size="5"><a href="{% url 'post_miss2' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="5"><a href="{% url 'post_right2'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+  {% endifequal %}
     
 </div>
 {% endblock %}
