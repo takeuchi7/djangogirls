@@ -12,4 +12,6 @@ urlpatterns =[
     path('post/<int:pk>/miss1/', views.post_miss1, name='post_miss1'),
     path('post/<int:pk>/right2/', views.post_right2, name='post_right2'),
     path('post/<int:pk>/miss2/', views.post_miss2, name='post_miss2'),
+    path('post/<int:pk>/right3/', views.post_right3, name='post_right3'),
+    path('post/<int:pk>/miss3/', views.post_miss3, name='post_miss3'),
 ]

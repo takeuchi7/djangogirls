@@ -52,3 +52,7 @@ def post_right2(request, pk):
     return render(request, 'blog/post_right2.html')
 def post_miss2(request, pk):
     return render(request, 'blog/post_miss2.html')
+def post_right3(request, pk):
+    return render(request, 'blog/post_right3.html')
+def post_miss3(request, pk):
+    return render(request, 'blog/post_miss3.html')

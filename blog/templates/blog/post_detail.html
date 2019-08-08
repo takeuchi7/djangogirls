@@ -9,28 +9,31 @@
         <!--<p>問題: {{ post.pk}}</p>-->
       </div>
   {% endif %}
+  <p class="mb2">----------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <h1><font size="20">■{{ post.number }}</font></h1>  
+  <p class="mb10"><font size="20">{{ post.title }}</font></p>
+  <p class="mb2">----------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 
-<!--もし、アカウントログインしていればボタンが表示-->
-  {% if user.is_authenticated %}
-      <!--<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>-->
-  {% endif %}
-  <h1>{{ post.number }}</h1>  
-  <h1>{{ post.title }}</h1>
-  <p>{{ post.text|linebreaksbr }}</p>
+  <p><font size="15">{{ post.text|linebreaksbr }}</font></p>
     
 　{% ifequal post.pk 2 %}
-    <p><font size="5"><a href="{% url 'post_right' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
-    <p><font size="5"><a href="{% url 'post_miss'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_right' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_miss'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
   {% endifequal %}
 
 　{% ifequal post.pk 3 %}
-    <p><font size="5"><a href="{% url 'post_miss1' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
-    <p><font size="5"><a href="{% url 'post_right1'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_miss1' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_right1'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
   {% endifequal %}
 
 　{% ifequal post.pk 5 %}
-    <p><font size="5"><a href="{% url 'post_miss2' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
-    <p><font size="5"><a href="{% url 'post_right2'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_miss2' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_right2'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+  {% endifequal %}
+
+　{% ifequal post.pk 6 %}
+    <p><font size="20"><a href="{% url 'post_miss3' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_right3'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
   {% endifequal %}
     
 </div>
