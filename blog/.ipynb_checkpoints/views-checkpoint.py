@@ -80,3 +80,43 @@ def post_right9(request, pk):
     return render(request, 'blog/post_right9.html')
 def post_miss9(request, pk):
     return render(request, 'blog/post_miss9.html')
+def post_right10(request, pk):
+    return render(request, 'blog/post_right10.html')
+def post_miss10(request, pk):
+    return render(request, 'blog/post_miss10.html')
+def post_right11(request, pk):
+    return render(request, 'blog/post_right11.html')
+def post_miss11(request, pk):
+    return render(request, 'blog/post_miss11.html')
+def post_right12(request, pk):
+    return render(request, 'blog/post_right12.html')
+def post_miss12(request, pk):
+    return render(request, 'blog/post_miss12.html')
+def post_right13(request, pk):
+    return render(request, 'blog/post_right13.html')
+def post_miss13(request, pk):
+    return render(request, 'blog/post_miss13.html')
+def post_right14(request, pk):
+    return render(request, 'blog/post_right14.html')
+def post_miss14(request, pk):
+    return render(request, 'blog/post_miss14.html')
+def post_right15(request, pk):
+    return render(request, 'blog/post_right15.html')
+def post_miss15(request, pk):
+    return render(request, 'blog/post_miss15.html')
+def post_right16(request, pk):
+    return render(request, 'blog/post_right16.html')
+def post_miss16(request, pk):
+    return render(request, 'blog/post_miss16.html')
+def post_right17(request, pk):
+    return render(request, 'blog/post_right17.html')
+def post_miss17(request, pk):
+    return render(request, 'blog/post_miss17.html')
+def post_right18(request, pk):
+    return render(request, 'blog/post_right18.html')
+def post_miss18(request, pk):
+    return render(request, 'blog/post_miss18.html')
+def post_right19(request, pk):
+    return render(request, 'blog/post_right19.html')
+def post_miss19(request, pk):
+    return render(request, 'blog/post_miss19.html')
