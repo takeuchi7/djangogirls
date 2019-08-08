@@ -27,13 +27,43 @@
   {% endifequal %}
 
 　{% ifequal post.pk 5 %}
-    <p><font size="20"><a href="{% url 'post_miss2' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
-    <p><font size="20"><a href="{% url 'post_right2'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_right2' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_miss2'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
   {% endifequal %}
 
 　{% ifequal post.pk 6 %}
     <p><font size="20"><a href="{% url 'post_miss3' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
     <p><font size="20"><a href="{% url 'post_right3'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+  {% endifequal %}
+
+　{% ifequal post.pk 7 %}
+    <p><font size="20"><a href="{% url 'post_miss4' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_right4'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+  {% endifequal %}
+
+　{% ifequal post.pk 8 %}
+    <p><font size="20"><a href="{% url 'post_right5' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_miss5'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+  {% endifequal %}
+
+　{% ifequal post.pk 9 %}
+    <p><font size="20"><a href="{% url 'post_right6' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_miss6'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+  {% endifequal %}
+
+　{% ifequal post.pk 10 %}
+    <p><font size="20"><a href="{% url 'post_right7' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_miss7'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+  {% endifequal %}
+
+　{% ifequal post.pk 11 %}
+    <p><font size="20"><a href="{% url 'post_miss8' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_right8'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
+  {% endifequal %}
+
+　{% ifequal post.pk 13 %}
+    <p><font size="20"><a href="{% url 'post_right9' pk=post.pk %}">{{ post.answer1|linebreaksbr }}</a></font><p>
+    <p><font size="20"><a href="{% url 'post_miss9'  pk=post.pk %}">{{ post.answer2|linebreaksbr }}</a></font><p>
   {% endifequal %}
     
 </div>

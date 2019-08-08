@@ -56,3 +56,27 @@ def post_right3(request, pk):
     return render(request, 'blog/post_right3.html')
 def post_miss3(request, pk):
     return render(request, 'blog/post_miss3.html')
+def post_right4(request, pk):
+    return render(request, 'blog/post_right4.html')
+def post_miss4(request, pk):
+    return render(request, 'blog/post_miss4.html')
+def post_right5(request, pk):
+    return render(request, 'blog/post_right5.html')
+def post_miss5(request, pk):
+    return render(request, 'blog/post_miss5.html')
+def post_right6(request, pk):
+    return render(request, 'blog/post_right6.html')
+def post_miss6(request, pk):
+    return render(request, 'blog/post_miss6.html')
+def post_right7(request, pk):
+    return render(request, 'blog/post_right7.html')
+def post_miss7(request, pk):
+    return render(request, 'blog/post_miss7.html')
+def post_right8(request, pk):
+    return render(request, 'blog/post_right8.html')
+def post_miss8(request, pk):
+    return render(request, 'blog/post_miss8.html')
+def post_right9(request, pk):
+    return render(request, 'blog/post_right9.html')
+def post_miss9(request, pk):
+    return render(request, 'blog/post_miss9.html')
